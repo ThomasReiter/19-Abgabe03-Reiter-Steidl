@@ -71,6 +71,15 @@ public class StringStackTest
     /**
      * Feel Free to insert other test cases for the String Stack Implementation !!!
      */
+	 public void testSameElements() {
+
+        s.push("test");
+        s.push("test");
+        s.push("test");
+        s.push("test");
+
+
+    }
     
     
     
