@@ -12,6 +12,7 @@ public class StringStackTest
     {
         s = new StringStack(5); // keep size of 5 !!
     }
+    //this is a test .-.
     
     /**
      * tests if stack is empty after initialization
