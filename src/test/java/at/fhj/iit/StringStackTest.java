@@ -2,6 +2,8 @@ package at.fhj.iit;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Assert;
+
 
 public class StringStackTest
 {
@@ -10,9 +12,8 @@ public class StringStackTest
     @Before
     public void setup() throws Exception
     {
-        s = new StringStack(5); // keep size of 5 !!
+    	s = new StringStack(5); // keep size of 5 !!
     }
-    //this is a test .-.
     
     /**
      * tests if stack is empty after initialization
@@ -23,6 +24,7 @@ public class StringStackTest
     @Test
     public void testIsEmpty() throws Exception
     {
+    	Assert.assertTrue(s.isEmpty());
     }
     
     /**
