@@ -36,6 +36,8 @@ public class StringStackTest
     @Test
     public void testIsNotEmpty() throws Exception
     {
+    	s.push("test");
+    	Assert.assertFalse(s.isEmpty());
     }
 
     /**
@@ -51,10 +53,25 @@ public class StringStackTest
     @Test
     public void testPushPop() throws Exception
     {
+    	//add elements
+    	s.push("one");
+    	s.push("two");
+    	s.push("three");
+    
+    	//use assert and pop check if elements are as expected
+    	
+    	Assert.assertEquals("three", s.pop());
+    	Assert.assertEquals("two", s.pop());
+    	Assert.assertEquals("one", s.pop());
+    
+    	Assert.assertTrue(s.isEmpty());
+    
     }
     
     /**
      * Feel Free to insert other test cases for the String Stack Implementation !!!
      */
+    
+    
     
 }
