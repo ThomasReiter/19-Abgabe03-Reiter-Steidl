@@ -71,6 +71,7 @@ public class StringStackTest
     /**
      * Feel Free to insert other test cases for the String Stack Implementation !!!
      */
+	 @Test
 	 public void testSameElements() {
 
         s.push("test");
@@ -80,7 +81,16 @@ public class StringStackTest
 
 
     }
+	@Test (expected = Exception.class)
+	public void testOverflow(){
+		
+		s.push("1");
+		s.push("2");
+		s.push("3");
+		s.push("4");
+		s.push("5");
+		s.push("6");
     
-    
+    }
     
 }
